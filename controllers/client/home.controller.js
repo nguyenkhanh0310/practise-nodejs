@@ -1,3 +1,6 @@
+// [GET] /
 module.exports.index = (req, res) => {
-  res.send('Nguyen Thi My Khanh')
+  res.render("client/pages/home/index", {
+    pageTitle: "Trang chủ"
+  })
 }

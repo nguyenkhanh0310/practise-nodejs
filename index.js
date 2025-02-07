@@ -13,6 +13,9 @@ route(app);
 app.set('views', './views');
 app.set('view engine', 'pug');
 
+// Serving static files
+app.use(express.static('public'))
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
